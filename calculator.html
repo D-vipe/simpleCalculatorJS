@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Простой Калькулятор</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="calculator.js"></script>
+</head>
+<body>
+	<div class="calculator-wrap">
+		<div class="calculator">
+			<div class="calculator__block">
+				<input type="text" name="expression_field" class="inputExpression" placeholder="0" disabled="disabled">
+				<input type="hidden" name="actions_query">
+			</div>
+			<div class="calculator__block">
+				<div class="calculator__grid">
+					<span class="calculator__button actions" data-action="reset">C</span>
+					<span class="calculator__button actions" data-action="revert_negative">+/-</span>
+					<span class="calculator__button fake"></span>
+					<span class="calculator__button actions colored" data-action="divide"><i class="fas fa-divide"></i></span>
+					<span class="calculator__button" data-action="7">7</span>
+					<span class="calculator__button" data-action="8">8</span>
+					<span class="calculator__button" data-action="9">9</span>
+					<span class="calculator__button actions colored" data-action="multiply"><i class="fas fa-times"></i></span>
+					<span class="calculator__button" data-action="4">4</span>
+					<span class="calculator__button" data-action="5">5</span>
+					<span class="calculator__button" data-action="6">6</span>
+					<span class="calculator__button actions colored" data-action="minus"><i class="fas fa-minus"></i></span>
+					<span class="calculator__button" data-action="1">1</span>
+					<span class="calculator__button" data-action="2">2</span>
+					<span class="calculator__button" data-action="3">3</span>
+					<span class="calculator__button actions colored" data-action="plus"><i class="fas fa-plus"></i></span>
+					<span class="calculator__button fake"></span>
+					<span class="calculator__button" data-action="0">0</span>
+					<span class="calculator__button actions"  data-action='float'>,</span>
+					<span class="calculator__button actions colored" data-action="result"><i class="fas fa-equals"></i></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
